@@ -41,7 +41,7 @@ const Home = (): JSX.Element => {
   }, []);
 
   function handleAddProduct(id: number) {
-    localStorage.setItem('@RocketShoes:cart', JSON.stringify(id));
+    addProduct(id);
   }
 
   return (
